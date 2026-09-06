@@ -43,7 +43,6 @@ Privacy-first local semantic search desktop application.
 - `second_brain/` — Application package.
 - `second_brain/ui/` — PyQt6 UI (must not import storage directly).
 - `second_brain/core/` — Services and workers (must not import UI).
-- `tests/` — pytest test pyramid: unit, integration, ui, e2e.
 - `assets/` — Model assets (`all-MiniLM-L6-v2.onnx`, `tokenizer.json`).
 
 ## Architecture direction
@@ -52,4 +51,3 @@ Privacy-first local semantic search desktop application.
 UI (PyQt6) -> Controller / Services -> Workers -> Storage (DuckDB)
 ```
 
-The dependency direction is enforced by `tests/test_architecture_direction.py`.
